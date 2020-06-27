@@ -1,0 +1,46 @@
+*{
+    margin: 0;
+    padding: 0;
+    user-select: none;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: aquamarine;
+    min-height: 100vh;
+}
+.container
+{
+    position: relative;
+}
+.container form{
+    width: 50%;
+    position: relative;
+    left: 30%;
+}
+.container h2{
+    font-size: 30px;
+    font-weight: 400;
+    color: #333;
+}
+.container input[type="text"]{
+    width: 100%;
+    position: relative;
+    height: 60px;
+    margin:15px 0 20px;
+    background: transparent;
+    padding: 0 20px;
+    outline: none;
+    border: none;
+    font-size: 24px;
+    letter-spacing: 4px;
+    box-sizing: border-box;
+    border-radius: 8px;
+    color: #333;
+    box-shadow: -4px -4px 10px rgba(255, 255, 255,1),
+                inset 4px 4px 10px rgba(0, 0, 0,0.05),
+                inset -4px -4px 10px rgba(255, 255, 255,1),
+                4px 4px 10px  rgba(0, 0, 0,0.05);
+}
