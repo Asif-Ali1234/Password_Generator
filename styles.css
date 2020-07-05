@@ -15,6 +15,13 @@ body{
 {
     position: relative;
 }
+#copyalert{
+    width: auto;
+    position: fixed;
+    top: 10px;
+    left: 80%;
+    display: none;
+}
 .container form{
     width: 100%;
 }
@@ -28,11 +35,15 @@ body{
     text-align: center;
     font-size: 18px;
 }
-.container input[type="text"]{
-    width: 100%;
-    position: relative;
+
+
+.container #passwdinput{
+    box-shadow: -4px -4px 10px rgba(255, 255, 255,1),
+                inset 4px 4px 10px rgba(0, 0, 0,0.05),
+                inset -4px -4px 10px rgba(255, 255, 255,1),
+                4px 4px 10px  rgba(0, 0, 0,0.05);
+    width: 90%;
     height: 60px;
-    margin:15px 0 20px;
     background: transparent;
     padding: 0 20px;
     outline: none;
@@ -42,12 +53,16 @@ body{
     box-sizing: border-box;
     border-radius: 8px;
     color: #333;
-    box-shadow: -4px -4px 10px rgba(255, 255, 255,1),
-                inset 4px 4px 10px rgba(0, 0, 0,0.05),
-                inset -4px -4px 10px rgba(255, 255, 255,1),
-                4px 4px 10px  rgba(0, 0, 0,0.05);
 }
 
+#cpybtn{
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 5px;
+}
+
+.container .input-group button i{
+    font-size: 24px;
+}
 
 .container p{
     font-size: 20px;

@@ -1,7 +1,9 @@
 
  $(document).ready(function () {
+    $('#cpybtn').tooltip({title: "Copy Password !", animation: true,delay: {show: 400, hide: 500}});
     document.oncontextmenu = document.body.oncontextmenu = function () { return false; }
 });
+
 bool=true
 function  generate_password(symbol_check_id,numbers_check_id,input_id){
     var chars=""
@@ -22,4 +24,20 @@ function  generate_password(symbol_check_id,numbers_check_id,input_id){
         password+=chars.substring(rn,rn+1)
     }
     document.getElementById(input_id).value=password
+}
+
+
+function copy(){
+    var input=document.getElementById('passwdinput')
+    try{
+    input.select()
+    input.setSelectionRange(0, 99999)
+    document.execCommand("copy");
+    document.getElementById('copymsg').innerHTML="Copied!!"
+    document.getElementById('copyalert').style.display="block"
+    }
+    catch{
+        document.getElementById('copymsg').innerHTML="Not Copied!!"
+    document.getElementById('copyalert').style.display="block"
+    }
 }

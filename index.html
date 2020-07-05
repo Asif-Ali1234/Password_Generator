@@ -13,10 +13,19 @@
     <title>Generating Strong Password</title>
 </head>
 <body>
+    <div class="alert alert-info alert-dismissible fade show" id="copyalert">
+        <button type="button" class="close" data-dismiss="alert">&times;</button>
+        <strong id="copymsg"></strong>
+    </div>
     <div class="container">
         <form>
             <h2>Random Password Generator</h2>
-            <input type="text"placeholder="Create Password"id="passwdinput"/>
+            <div class="input-group mb-3">
+                <input type="text" placeholder="Create Password" id="passwdinput"/>
+                <div class="input-group-append">
+                    <button class="btn btn-outline-secondary" id="cpybtn" type="button" onclick="copy()"><i class="far fa-copy"></i></button>  
+                </div>
+            </div>
             <div class="custom-control custom-checkbox mb-3">
                 <input type="checkbox" class="custom-control-input" id="Symbolscheck" name="example1">
                 <label class="custom-control-label" for="Symbolscheck">Include Symbols</label>
