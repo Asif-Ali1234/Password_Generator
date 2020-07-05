@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@700&display=swap');
 *{
     margin: 0;
     padding: 0;
@@ -8,7 +9,6 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: aquamarine;
     min-height: 100vh;
 }
 .container
@@ -16,14 +16,17 @@ body{
     position: relative;
 }
 .container form{
-    width: 50%;
-    position: relative;
-    left: 30%;
+    width: 100%;
 }
 .container h2{
     font-size: 30px;
     font-weight: 400;
     color: #333;
+    text-align: center;
+}
+.alert{
+    text-align: center;
+    font-size: 18px;
 }
 .container input[type="text"]{
     width: 100%;
@@ -43,4 +46,25 @@ body{
                 inset 4px 4px 10px rgba(0, 0, 0,0.05),
                 inset -4px -4px 10px rgba(255, 255, 255,1),
                 4px 4px 10px  rgba(0, 0, 0,0.05);
+}
+
+
+.container p{
+    font-size: 20px;
+    color: dimgray;
+    font-weight: 700;
+    font-family: 'Cinzel', serif;
+    text-align: end;
+}
+
+.container p a{
+    color: coral;
+    font-size: 40px;
+}
+
+.container p a:hover{
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
